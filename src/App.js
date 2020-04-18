@@ -100,7 +100,7 @@ function App() {
         Header: 'First Name',
         columns: [
           {
-            Header: 'Sort by Name',
+            Header: 'Sort by First Name',
             accessor: 'Firstname',
           }
         ],
@@ -109,7 +109,7 @@ function App() {
         Header: 'Last Name',
         columns: [
           {
-            Header: 'Sort by Name',
+            Header: 'Sort by Last Name',
             accessor: 'Lastname',
           }
         ],
@@ -118,7 +118,7 @@ function App() {
         Header: 'Title',
         columns: [
           {
-            Header: 'Sort by Name',
+            Header: 'Sort by Title',
             accessor: 'title',
           
           }
@@ -128,7 +128,7 @@ function App() {
         Header: 'Position',
         columns: [
           {
-            Header: 'Sort by Name',
+            Header: 'Sort by Position',
             accessor: 'position',
           }
         ],

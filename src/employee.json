@@ -1,49 +1,57 @@
 [
   {
     "id": 1,
-    "name": "Rob Stone",
+    "Firstname": "Rob",
+    "Lastname": "Stone",
     "title": "Cashier",
     "position": "Employee"
   },
   {
     "id": 2,
-    "name": "Rachel Adams",
+    "Firstname": "Rachel",
+    "Lastname": "Adams",
     "title": "Cashier",
     "position": "Employee"
   },
   {
     "id": 3,
-    "name": "George Alonzo",
+    "Firstname": "George",
+    "Lastname": "Alonzo",
     "title": "Admin",
     "position": "Manager"
   },
   {
     "id": 4,
-    "name": "Albert Albert",
+    "Firstname": "Albert",
+    "Lastname": "Albert",
     "title": "Clerk",
     "position": "Employee"
   },
   {
     "id": 5,
-    "name": "Gloria James",
+    "Firstname": "Gloria",
+    "Lastname": "James",
     "title": "Driver",
     "position": "Employee"
   },
   {
     "id": 6,
-    "name": "Jillian Stone",
+    "Firstname": "Jillian",
+    "Lastname": "Stone",
     "title": "Analyst",
     "position": "Manager"
   },
   {
     "id": 7,
-    "name": "Arthur Hont",
+    "Firstname": "Arthur",
+    "Lastname": "Hont",
     "title": "Consultant",
     "position": "Employee"
   },
   {
     "id": 8,
-    "name": "Jim Anderson",
+    "Firstname": "Jim",
+    "Lastname": "Anderson",
     "title": "Director",
     "position": "Manager"
   }

@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Rob Stone",
+    "title": "Cashier",
+    "position": "Employee"
+  },
+  {
+    "id": 2,
+    "name": "Rachel Adams",
+    "title": "Cashier",
+    "position": "Employee"
+  },
+  {
+    "id": 3,
+    "name": "George Alonzo",
+    "title": "Admin",
+    "position": "Manager"
+  },
+  {
+    "id": 4,
+    "name": "Albert Albert",
+    "title": "Clerk",
+    "position": "Employee"
+  },
+  {
+    "id": 5,
+    "name": "Gloria James",
+    "title": "Driver",
+    "position": "Employee"
+  },
+  {
+    "id": 6,
+    "name": "Jillian Stone",
+    "title": "Analyst",
+    "position": "Manager"
+  },
+  {
+    "id": 7,
+    "name": "Arthur Hont",
+    "title": "Consultant",
+    "position": "Employee"
+  },
+  {
+    "id": 8,
+    "name": "Jim Anderson",
+    "title": "Director",
+    "position": "Manager"
+  }
+]
+

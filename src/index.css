@@ -1,6 +1,7 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
+  background-color: blueviolet;
 }
 
 h1,
@@ -15,4 +16,8 @@ h6 {
 small {
   font-weight: 300;
   font-style: italic;
+}
+.jumbotron
+{
+background-color:#A05F5F;
 }

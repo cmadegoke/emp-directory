@@ -54,22 +54,21 @@ function App() {
 
   return (
     <>
-      <Jumbotron fluid className='bg-dark text-light'>
+      <Jumbotron fluid className='bg-blue text-dark'>
         <Container>
           <h1>
             <span role='img' aria-label='Fencing emoji'>
-              🤺
             </span>{' '}
-            Employee Trackr
+            Employee Directory
           </h1>
         </Container>
       </Jumbotron>
 
-      <Container fluid>
+      <Container>
         <Row>
-          {/* form and adjusting table view */}
+        
           <Col xs={12} lg={3}>
-            <h2>Adjust your table view!</h2>
+            
             <Form>
               <Form.Group>
                 <Form.Label>Filter results</Form.Label>
@@ -86,7 +85,7 @@ function App() {
                 <Form.Control as='select' onChange={(e) => setFilterCriteria(e.target.value)}>
                   <option value='name'>Name</option>
                   <option value='department'>Department</option>
-                  <option value='title'>Title</option>
+                  <option value='city'>City</option>
                 </Form.Control>
               </Form.Group>
               <Form.Group>
@@ -125,7 +124,7 @@ function App() {
                       )}
                     </th>
                     <th onClick={() => handleSort('city')}>
-                      <span className='mr-3'>Title</span>
+                      <span className='mr-3'>City</span>
                       {sortConfig?.columnName === 'city' && (
                         <span>{sortConfig.direction === 'ascending' ? '⬆️' : '⬇️'}</span>
                       )}
@@ -144,7 +143,7 @@ function App() {
                           <td>{idx + 1}</td>
                           <td>{employee.name}</td>
                           <td>{employee.department}</td>
-                          <td>{employee.title}</td>
+                          <td>{employee.city}</td>
                           <td>
                             <Image
                               style={{ maxWidth: 150 }}
@@ -176,7 +175,7 @@ function App() {
                           <Card.Body>
                             <Card.Title>{employee.name}</Card.Title>
                             <h5>{employee.department}</h5>
-                            <small>From: {employee.title}</small>
+                            <small>From: {employee.city}</small>
                           </Card.Body>
                         </Card>
                       </Col>
@@ -196,120 +195,7 @@ function App() {
 
 
 
-// function Table({ columns, data }) {
-//   // Use the state and functions returned from useTable to build your UI
-//   const {
-//     getTableProps,
-//     getTableBodyProps,
-//     headerGroups,
-//     rows,
-//     prepareRow,
-//   } = useTable(
-//     {
-//       columns,
-//       data,
-//     },
-//     useSortBy
-//   )
-
-
-
-  
-//     return (
-//       <>
-//         <table {...getTableProps()}>
-//           <thead>
-//             {headerGroups.map(headerGroup => (
-//               <tr {...headerGroup.getHeaderGroupProps()}>
-//                 {headerGroup.headers.map(column => (
-//                   // Add the sorting props to control sorting. For this example
-//                   // we can add them into the header props
-//                   <th {...column.getHeaderProps(column.getSortByToggleProps())}>
-//                     {column.render('Header')}
-//                     {/* Add a sort direction indicator */}
-//                     <span>
-//                       {column.isSorted
-//                         ? column.isSortedDesc
-//                           ? ' 🔽'
-//                           : ' 🔼'
-//                         : ''}
-//                     </span>
-//                   </th>
-//                 ))}
-//               </tr>
-//             ))}
-//       </thead>
-//       <tbody {...getTableBodyProps()}>
-//         {rows.map((row, i) => {
-//           prepareRow(row)
-//           return (
-//             <tr {...row.getRowProps()}>
-//               {row.cells.map(cell => {
-//                 return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
-//               })}
-//                       </tr>
-//           )
-//         })}
-//       </tbody>
-//     </table>
-//     </>
-//   )
-// }
-
-// function App() {
-//   const columns = React.useMemo(
-//     () => [
-//       {
-//         Header: 'First Name',
-//         columns: [
-//           {
-//             Header: 'Sort by First Name',
-//             accessor: 'Firstname',
-//           }
-//         ],
-//       },
-//       {
-//         Header: 'Last Name',
-//         columns: [
-//           {
-//             Header: 'Sort by Last Name',
-//             accessor: 'Lastname',
-//           }
-//         ],
-//       },
-//       {
-//         Header: 'Title',
-//         columns: [
-//           {
-//             Header: 'Sort by Title',
-//             accessor: 'title',
-          
-//           }
-//         ],
-//       },
-//       {
-//         Header: 'Position',
-//         columns: [
-//           {
-//             Header: 'Sort by Position',
-//             accessor: 'position',
-//           }
-//         ],
-//       },
-
-     
-//     ],
-//     []
-//   )
   
 
-//     const data = React.useMemo(() =>  employees,[])
-
-//     return (
-//       <Styles>
-//         <Table columns={columns} data={data} />
-//       </Styles>
-//     )
-//   }
 
 export default App;
